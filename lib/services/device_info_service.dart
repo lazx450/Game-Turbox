@@ -28,8 +28,8 @@ class DeviceInfoService {
 
     final androidInfo = await _deviceInfoPlugin.androidInfo;
 
-    final totalStorageMb = ((await _diskSpace.getTotalDiskSpace()) ?? 0).round();
-    final freeStorageMb = ((await _diskSpace.getFreeDiskSpace()) ?? 0).round();
+    final totalStorageMb = ((await _diskSpace.getTotalDiskSpace) ?? 0).round();
+    final freeStorageMb = ((await _diskSpace.getFreeDiskSpace) ?? 0).round();
 
     final cpuCoreCount = Platform.numberOfProcessors;
 
