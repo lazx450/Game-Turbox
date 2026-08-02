@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.gameturbo.x"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -25,7 +25,7 @@ android {
         applicationId = "com.gameturbo.x"
         // Support Android 9 (API 28) sampai Android 16 (API 36 saat rilis).
         minSdk = 28
-        targetSdk = 35
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
