@@ -31,7 +31,7 @@ dependencies:
   package_info_plus: ^8.0.0
 
   # Daftar aplikasi terinstal (untuk Game Detector, legal via PackageManager)
-  device_apps: ^2.2.0
+  device_apps: ^2.1.0
 
   # Penyimpanan lokal
   shared_preferences: ^2.2.3
