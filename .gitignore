@@ -1,0 +1,12 @@
+**/android/local.properties
+**/android/app/google-services.json
+**/ios/Runner/GoogleService-Info.plist
+**/*.jks
+**/*.keystore
+key.properties
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.idea/
+*.iml

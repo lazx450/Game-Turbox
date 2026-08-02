@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Memaksa seluruh traffic app menggunakan HTTPS (cleartext traffic dimatikan)
+     sesuai kebijakan keamanan Google Play untuk app modern. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

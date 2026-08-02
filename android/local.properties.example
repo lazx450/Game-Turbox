@@ -1,0 +1,4 @@
+# Salin file ini menjadi "local.properties" (tanpa .example) lalu isi path SDK
+# Anda. File local.properties TIDAK boleh di-commit ke Git (sudah ada di .gitignore).
+sdk.dir=/path/ke/Android/sdk
+flutter.sdk=/path/ke/flutter
