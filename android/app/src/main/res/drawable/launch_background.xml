@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Background splash native (tampil sebelum Flutter engine siap) --
-     warna disamakan dengan AppColors.background agar tidak ada "flash putih". -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@android:color/black" />
 </layer-list>
