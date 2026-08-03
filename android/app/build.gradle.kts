@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.gameturbo.x"
-    compileSdk = 36
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -21,11 +21,9 @@ android {
     }
 
     defaultConfig {
-        // GANTI applicationId ini sebelum publish jika Anda punya paket sendiri.
         applicationId = "com.gameturbo.x"
-        // Support Android 9 (API 28) sampai Android 16 (API 36 saat rilis).
         minSdk = 28
-        targetSdk = 36
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
@@ -33,16 +31,9 @@ android {
 
     buildTypes {
         release {
-            // TODO: ganti dengan signing config rilis Anda sendiri sebelum
-            // upload ke Play Console. Signing config debug dipakai sementara
-            // agar `flutter build apk` tidak gagal saat development.
             signingConfig = signingConfigs.getByName("debug")
-            isMinifyEnabled = true
-            isShrinkResources = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            isMinifyEnabled = false
+            isShrinkResources = false
         }
     }
 }
@@ -54,4 +45,5 @@ flutter {
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("androidx.multidex:multidex:2.0.1")
+    implementation("com.google.android.play:core:1.10.3")
 }
