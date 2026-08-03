@@ -55,3 +55,5 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("androidx.multidex:multidex:2.0.1")
 }
+-dontwarn com.google.android.play.core.**
+-keep class com.google.android.play.core.** { *; }
